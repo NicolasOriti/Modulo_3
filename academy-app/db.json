@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "7fe0",
+      "name": "Nicolas",
+      "email": "mentor@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "9ba1",
+      "name": "Enrico",
+      "email": "tutor@gmail.com",
+      "password": "asdasda"
+    },
+    {
+      "id": "0278",
+      "name": "nico",
+      "email": "nico@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "9713",
+      "name": "nico",
+      "email": "nicoasd@gmail.com",
+      "password": "123"
+    }
+  ]
+}
