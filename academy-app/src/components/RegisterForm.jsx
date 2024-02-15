@@ -11,6 +11,8 @@ export const RegisterForm = () => {
     repitePassword: '',
   });
 
+  const [isOk, setIsOk] = useState(false);
+
   const handleOnChange = (e) => {
     setFormValues({
       // name: formValues.name,
@@ -36,57 +38,73 @@ export const RegisterForm = () => {
     }
 
     await createUser(formValues);
-    console.log('Formulario enviado', formValues);
+    setFormValues({
+      name: '',
+      email: '',
+      password: '',
+      repitePassword: '',
+    });
+    registerSuccess();
+  };
+
+  const registerSuccess = () => {
+    setIsOk(true);
+    setTimeout(() => {
+      setIsOk(false);
+    }, 3000);
   };
 
   return (
-    <Form onSubmit={handleOnSubmit}>
-      <Form.Group className='mb-3' controlId='name'>
-        <Form.Label>Name</Form.Label>
-        <Form.Control
-          type='text'
-          placeholder='Enter name'
-          name='name'
-          value={formValues.name}
-          onChange={handleOnChange}
-        />
-      </Form.Group>
+    <>
+      {isOk && <div className='alert alert-success'>Usuario registrado exitosamente!</div>}
+      <Form onSubmit={handleOnSubmit}>
+        <Form.Group className='mb-3' controlId='name'>
+          <Form.Label>Name</Form.Label>
+          <Form.Control
+            type='text'
+            placeholder='Enter name'
+            name='name'
+            value={formValues.name}
+            onChange={handleOnChange}
+          />
+        </Form.Group>
 
-      <Form.Group className='mb-3' controlId='email'>
-        <Form.Label>Email address</Form.Label>
-        <Form.Control
-          type='email'
-          placeholder='Enter email'
-          name='email'
-          value={formValues.email}
-          onChange={handleOnChange}
-        />
-      </Form.Group>
+        <Form.Group className='mb-3' controlId='email'>
+          <Form.Label>Email address</Form.Label>
+          <Form.Control
+            type='email'
+            placeholder='Enter email'
+            name='email'
+            value={formValues.email}
+            onChange={handleOnChange}
+          />
+        </Form.Group>
 
-      <Form.Group className='mb-3' controlId='password'>
-        <Form.Label>Password</Form.Label>
-        <Form.Control
-          type='password'
-          placeholder='Password'
-          name='password'
-          value={formValues.password}
-          onChange={handleOnChange}
-        />
-      </Form.Group>
+        <Form.Group className='mb-3' controlId='password'>
+          <Form.Label>Password</Form.Label>
+          <Form.Control
+            type='password'
+            placeholder='Password'
+            name='password'
+            value={formValues.password}
+            onChange={handleOnChange}
+          />
+        </Form.Group>
 
-      <Form.Group className='mb-3' controlId='repitePassword'>
-        <Form.Label>Repite Password</Form.Label>
-        <Form.Control
-          type='password'
-          placeholder='Repite password'
-          name='repitePassword'
-          value={formValues.repitePassword}
-          onChange={handleOnChange}
-        />
-      </Form.Group>
-      <Button variant='primary' type='submit'>
-        Submit
-      </Button>
-    </Form>
+        <Form.Group className='mb-3' controlId='repitePassword'>
+          <Form.Label>Repite Password</Form.Label>
+          <Form.Control
+            type='password'
+            placeholder='Repite password'
+            name='repitePassword'
+            value={formValues.repitePassword}
+            onChange={handleOnChange}
+          />
+        </Form.Group>
+        <Button variant='primary' type='submit'>
+          Submit
+        </Button>
+      </Form>
+    </>
   );
 };

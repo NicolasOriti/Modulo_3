@@ -4,7 +4,8 @@
       "id": "7fe0",
       "name": "Nicolas",
       "email": "mentor@gmail.com",
-      "password": "123456"
+      "password": "123456",
+      "role": "ADMIN"
     },
     {
       "id": "9ba1",
@@ -23,6 +24,30 @@
       "name": "nico",
       "email": "nicoasd@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "ccab",
+      "name": "Alfonso",
+      "email": "alfon@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "0b75",
+      "name": "Alfonso",
+      "email": "alfonso@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "966a",
+      "name": "Esteban",
+      "email": "esteban@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "d9f5",
+      "name": "Nachito",
+      "email": "nachito@gmail.com",
+      "password": "1234"
     }
   ]
 }

@@ -21,6 +21,9 @@ export const HomePage = () => {
             <Link to='/register' className='btn btn-outline-info mt-3'>
               Crea tu cuenta
             </Link>
+            <Link to='/login' className='btn btn-outline-info mt-3'>
+              Inicia Sesion
+            </Link>
             <p className='text-grey'>Únete a los mas de 500.000 estudiantes</p>
           </div>
           <div className='col-6'>

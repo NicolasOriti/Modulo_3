@@ -22,6 +22,7 @@ export const NavBar = () => {
               <NavDropdown.Divider />
               <NavDropdown.Item href='#action/3.4'>Separated link</NavDropdown.Item>
             </NavDropdown>
+            <Link to='/admin'>Admin</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
