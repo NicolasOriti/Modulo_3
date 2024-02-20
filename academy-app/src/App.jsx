@@ -31,7 +31,13 @@ import './App.css';
 // ]);
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({
+    id: '7fe0',
+    name: 'Nicolas',
+    email: 'mentor@gmail.com',
+    password: '123456',
+    role: 'ADMIN',
+  });
 
   console.log('User login: ', user);
 

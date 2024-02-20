@@ -49,5 +49,28 @@
       "email": "nachito@gmail.com",
       "password": "1234"
     }
+  ],
+  "courses": [
+    {
+      "id": "2",
+      "title": "Curso HTML5 desde cero a experto",
+      "imagen": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2014/07/52149-html5.jpg?itok=iZUNlvf7",
+      "detalle": "El lenguaje html (hypertext markup language) se utiliza para el desarrollo y creación de páginas web. Se compone de una serie de etiquetas que el navegador interpreta.",
+      "video": "https://www.youtube.com/embed/vz4z0RLcAyk",
+      "mentor": "Enrico Palermo",
+      "img_mentor": ""
+    },
+    {
+      "id": "c4d1",
+      "title": "title prueba",
+      "detalle": "detalle prueba",
+      "mentor": "mentor prueba"
+    },
+    {
+      "id": "91dd",
+      "title": "Curso de Node.js",
+      "detalle": "Modulo 4 del cursado de la comision 87i",
+      "mentor": "Nicolas Oriti"
+    }
   ]
 }
